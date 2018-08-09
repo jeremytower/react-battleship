@@ -1,0 +1,225 @@
+﻿.block{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    outline: solid 2px black;
+    margin: 0;
+    cursor: pointer;
+    background-color:#773A85;
+    transition: .15s ease-in;
+    opacity: .9;
+    
+}
+
+.miss{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    outline: solid 2px black;
+    margin: 0;
+    cursor: pointer;
+    background-color:#773A85;
+    transition: .15s ease-in;
+    opacity: .5;
+   
+    
+}
+
+.hit{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    outline: solid 2px black;
+    margin: 0;
+    cursor: pointer;
+    background-color:#0F082E;
+    transition: .15s ease-in;
+    opacity: 1;
+    background-image: url("boom.png");
+    background-size: cover;
+}
+
+
+
+.block:hover{
+    opacity: .6;
+}
+
+h1{font-size: 50px;}
+
+#grid{
+    width: 500px;
+    margin: auto;
+	margin-top: 20px;
+    
+}
+
+body{
+    background-image: url("ship.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #0F082E;
+    
+    font-family: "Impact", "Times New Roman", Times;
+}
+h1{
+    text-align: center;
+    
+}
+#message{
+   text-align: center;
+   font-size: 25px;
+}
+
+#missles{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 250px;
+}
+#sunk{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 250px;
+    
+}
+#sunk p{
+    margin-top: -15px;
+}
+#sunk h4{
+    text-decoration: underline;
+}
+
+#restart{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 100px;
+    width: 150px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5%;
+    border: 3px solid #0F082E;
+}
+
+#restart:hover{
+    box-shadow: 3px 3px 9px rgb(40,40,40);
+}
+
+@media screen and (max-width: 1100px) {
+    #missles{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    width: 250px;
+}
+#sunk{
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    width: 250px;
+    
+}
+#sunk p{
+    margin-top: -15px;
+}
+#sunk h4{
+    text-decoration: underline;
+}
+
+#restart{
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    height: 100px;
+    width: 150px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5%;
+    border: 3px solid #0F082E;
+}
+}
+
+@media screen and (max-width: 900px) {
+
+    #grid{
+        margin-left: 30%;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    #grid{
+        width: 75vw;
+        margin: auto;
+    }
+    .block, .miss, .hit{
+        width: 10vw;
+        height: 10vw;
+    }
+    #missles, #sunk, #restart{
+        position: relative;
+    }
+    #missles{
+        float: left;
+        border: solid green;
+        width: 30vw;
+        display: none;
+    }
+
+    #sunk{
+       border: solid green;
+       width: 30vw;
+       display: none;
+    }
+    #restart{
+        
+        width: 150vw;
+        height: 40px;
+        margin-left: -30vw;
+    }
+    h1{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+}
+@media screen and (max-width: 520px) {
+    #grid{
+        width: 100vw;
+        margin: auto;
+    }
+    .block, .miss, .hit{
+        width: 13.5vw;
+        height: 13.5vw;
+    }
+    #missles, #sunk, #restart{
+        position: relative;
+    }
+    #missles{
+        float: left;
+        border: solid green;
+        width: 30vw;
+        display: none;
+    }
+
+    #sunk{
+       border: solid green;
+       width: 30vw;
+       display: none;
+    }
+    #restart{
+        
+        width: 150vw;
+        height: 40px;
+        margin-left: -30vw;
+    }
+    h1{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+}
